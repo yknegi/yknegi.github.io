@@ -136,8 +136,23 @@
 <ul>
           <div align="justify">
             <li> <strong>Computational Electromagnetics.</strong> With high-frequency usage and an increase in the complexity of electromagnetic devices, the design/analysis cycle time and cost of electromagnetic devices have increased tremendously. The design cycle cost and time can be reduced by using numerical modeling tools, and Computational Electromagnetics (CEM) is the key part of developing various electromagnetics design tools. These tools can solve radiation/scattering problems for antenna or Electromagnetic Interference (EMI)/ electromagnetic Compatibility (EMC) problems. CEM methods can broadly divide into differential equations, i.e., Finite Element Method (FEM), Finite Difference Time Domain Method (FDTD), and frequency domain method, i.e., Method of Moment (MoM) or Boundary Element Method (BEM). </li>
+
+
+
             <hr>
 		    <li> <strong>Fast hierarchical matrix solvers. </strong> A surface or interface mesh in CEM solvers gives rise to a smaller matrix size but in a dense form, which presents a time and memory bottleneck. Several fast iterative solver algorithms have been devised to mitigate the problem, namely, the Fast Multipole Method (FMM) and low-rank based methods (matrix compression). While these algorithms can reduce the cost of matrix-vector products to O(N) or O(NlogN), the solution time is impeded by the convergence rate of the iterative solution and will require better pre-conditioning techniques, particularly for full-wave applications. For the solution of the very large number of right-hand-side (RHS), a different iteration-free variant of fast solvers or, in other words, fast direct solvers or a good preconditioner can be very effective in expediting the matrix solution. The challenges involve reducing a traditionally O(N3) LU decomposition process to a faster linear complexity method exploiting the underlying physics of the interactions between basis functions.</li>
+            <br>
+            <p>Examples of H-Matrix solutions: polarization current flow over and inside lossless dilelectric Cube using Volume IE from 100 MHz to 600Mhz. </p>
+            <div class="yoxview">
+              <div class="row-fluid">
+                  <div class="span4 box">
+                      <a ><img src="images/cube-surf-curr-gif.gif"  class="img-polaroid" alt="Thumbnail Placeholder" title="Surface Polarization Current Distribution on a Volume Cube with length of 1 meter" /></a>
+                  </div>
+                  <div class="span5 box">
+                      <a ><img src="images/cube-vol-curr-gif.gif" class="img-polaroid" alt="Thumbnail Placeholder" title="volume Polarization Current Distribution on a Volume Cube with length of 1 meter" /></a>
+                  </div>	 
+              </div>
+          </div>	
             <hr>
           </div>
 </ul>		
