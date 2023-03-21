@@ -56,7 +56,7 @@
 					<div id="divLogo">
                         <a href="index.html" id="divSiteTitle">Yoginder Kumar Negi</a><br />
                         <a href="index.html" id="divTagLine">Senior Scientific Officer, Supercomputer Education and Research Centre</a><br />
-                        <a href="index.html" id="divTagLine"> Indian Institute of Science Bangalore, India</a>
+                        <a href="index.html" id="divTagLine">Indian Institute of Science Bangalore, India</a>
                     </div>
 
 	            </div>
@@ -73,7 +73,7 @@
                             <ul class="nav nav-pills ddmenu">
 								<li><a href="index.html">Home</a></li>
 								<li></li>
- 								<li><a href="research.html">Research</a></li>
+ 								<li><a href="research.html"><strong>Research</strong></a></li>
 								<li></li> 
  								<li><a href="publication.html">Publications</a></li>
 								<li></li>  								
@@ -134,11 +134,11 @@
 <!--<h4> Reserch Topics</h4>-->                    
 <ul>
           <div align="justify">
-            <li> <strong>Computational Electromagnetics.</strong> With high-frequency usage and an increase in the complexity of electromagnetic devices, the design/analysis cycle time and cost of electromagnetic devices have increased tremendously. The design cycle cost and time can be reduced by using numerical modeling tools, and Computational Electromagnetics (CEM) is the key part of developing various electromagnetics design tools. These tools can solve radiation/scattering problems for antenna or Electromagnetic Interference (EMI)/ electromagnetic Compatibility (EMC) problems. CEM methods can broadly divide into differential equations, i.e., Finite Element Method (FEM), Finite Difference Time Domain Method (FDTD), and frequency domain method, i.e., Method of Moment (MoM) or Boundary Element Method (BEM). </li>
+            <li> <strong>Computational Electromagnetics.</strong> With the use of high-frequency electromagnetic bands and the increased complexity of electromagnetic and Radio Frequency (RF) devices, the design/analysis time cycle and cost of electromagnetic devices have increased tremendously. The design cycle cost and time can be reduced by using numerical modeling tools, and Computational Electromagnetics (CEM) is a vital part of developing various electromagnetics design/analysis tools. These tools can solve radiation/scattering problems for antenna, Electromagnetic Interference (EMI)/ electromagnetic Compatibility (EMC) problems, and Radar Cross Section (RCS) analysis. CEM methods can broadly divide into differential equations, i.e., Finite Element Method (FEM), Finite Difference Time Domain Method (FDTD), and frequency domain method, i.e., Method of Moment (MoM) or Boundary Element Method (BEM). The main goal of all these methods is to enable the electromagnetics community to analyze and design RF devices with computer models. The accuracy, solving time, and system memory requirement are critical factors for solving EM problems using various CEM methods. Last few decades CEM community has overcome a few challenges. However, solving accurate and efficient multi-scale and significant electric wavelength size EM problems is still challenging. </li>
             <hr>
-		    <li> <strong>Fast hierarchical matrix solvers. </strong> A surface or interface mesh in CEM solvers gives rise to a smaller matrix size but in a dense form, which presents a time and memory bottleneck. Several fast iterative solver algorithms have been devised to mitigate the problem, namely, the Fast Multipole Method (FMM) and low-rank based methods (matrix compression). While these algorithms can reduce the cost of matrix-vector products to O(N) or O(NlogN), the solution time is impeded by the convergence rate of the iterative solution and will require better pre-conditioning techniques, particularly for full-wave applications. For the solution of the very large number of right-hand-side (RHS), a different iteration-free variant of fast solvers or, in other words, fast direct solvers or a good preconditioner can be very effective in expediting the matrix solution. The challenges involve reducing a traditionally O(N3) LU decomposition process to a faster linear complexity method exploiting the underlying physics of the interactions between basis functions.</li>
+		    <li> <strong>Fast Hierarchical Matrix (H-Matrix) solvers. </strong> A surface or volume mesh in MoM solvers gives rise to a smaller matrix size than the FEM-based solvers, but the matrix computed is in dense form, presenting a fill time, solution time, and high matrix storage memory bottleneck. Several fast iterative solver algorithms have been proposed to mitigate the problem: the Fast Multipole Method (FMM) and low-rank matrix compression methods like H-Matrix are a few of them. Algebraic fast solvers like H-Matrix are more popular than fast analytic solvers like FMM due to the ease of implementation and kernel independence property. While these algorithms can reduce the cost of matrix-vector products to O(N) or O(NlogN), the solution time depends on the convergence rate of the iterative solution. Also, as the number of unknowns increases, the solution iteration count increases, increasing the solution time. The solution time can be accelerated using a matrix preconditioner in the iterative solution process. Developing a kernel-independent and stable pre-conditioning matrix, particularly for full-wave applications, is challenging in CEM.</li>
             <br>
-            <p>Examples of H-Matrix solutions: polarization current flow over and inside lossless dilelectric Cube using Volume IE from 100 MHz to 600MHz. </p>
+            <p>Examples of H-Matrix solutions:Current flow over and inside lossless dilelectric cube and conducting sphere from 100 MHz to 600MHz. </p>
             
             
             <div class="yoxview">
@@ -148,6 +148,9 @@
                     </div>
                     <div class="span4 box">
                       <a ><img src="images/cube-vol-curr-gif.gif" class="img-polaroid" alt="Thumbnail Placeholder" title="Volume Polarization Current Distribution on a dilelectric Cube with length of 1 meter" /></a>
+                    </div>
+                    <div class="span4 box">
+                      <a ><img src="images/pec-sphere-surf-curr-gif.gif" class="img-polaroid" alt="Thumbnail Placeholder" title="Surface Current Distribution on a PEC Shphere with redious of 0.5 meter" /></a>
                     </div>
               </div>
             </div>	
